@@ -13,18 +13,18 @@
     "esModuleInterop": true,
     "allowJs": true,
     "noImplicitAny": false,
-    "baseUrl": "src",
+    "baseUrl": ".",
     "lib": ["esnext", "dom"],
     "paths": {
-      "@/*": ["*"]
+      "@/*": ["src/*"]
     },
     "skipLibCheck": true
   },
   "include": [
-    "/**/*.ts",
-    "/**/*.d.ts",
-    "/**/*.tsx",
-    "/**/*.vue",
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
     "vite.config.ts"
   ],
   "exclude": [
