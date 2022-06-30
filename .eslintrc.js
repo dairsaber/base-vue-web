@@ -27,6 +27,8 @@ module.exports = {
   },
   plugins: ["vue", "@typescript-eslint"],
   rules: {
+    // 关闭eslint未定义检查(ts会检查)
+    "no-undef": "off",
     indent: ["off", 2, { SwitchCase: 1 }],
     "no-useless-escape": "off",
     "linebreak-style": "off",
