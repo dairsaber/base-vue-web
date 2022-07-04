@@ -1,5 +1,4 @@
 /// <reference types="vite/client" />
-/// <reference types="vite/client" />
 
 interface ImportMetaEnv {
   readonly VITE_CESIUM_MODEL_BASE_URL: string
