@@ -20,7 +20,8 @@
     "noImplicitAny": false,
     "outDir": "outDir",
     "baseUrl": ".",
-    "lib": ["esnext", "dom"],
+    "lib": ["esnext", "dom"], 
+    "typeRoots": ["./node_modules/@types/", "./types"],
     "paths": {
       "@/*": ["src/*"]
     }
