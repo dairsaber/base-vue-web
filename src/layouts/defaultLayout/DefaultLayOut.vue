@@ -3,9 +3,13 @@
 </script>
 
 <template>
-  <div class="w-screen h-screen">
-    <MainContent />
-  </div>
+  <v-layout>
+    <v-navigation-drawer color="grey-darken-2" permanent />
+    <v-app-bar color="grey-lighten-2" />
+    <v-main>
+      <MainContent />
+    </v-main>
+  </v-layout>
 </template>
 
 <style lang="less" scoped></style>

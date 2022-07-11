@@ -1,7 +1,3 @@
-<script lang="ts" setup></script>
-
 <template>
-  <RouterView />
+  <router-view />
 </template>
-
-<style lang="less" scoped></style>

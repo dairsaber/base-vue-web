@@ -1,5 +1,5 @@
 .slide-y-transition {
-  .transition-default();
+  @include transition-default;
 
   &-enter-from,
   &-leave-to {
@@ -9,7 +9,7 @@
 }
 
 .slide-y-reverse-transition {
-  .transition-default();
+  @include transition-default;
 
   &-enter-from,
   &-leave-to {
@@ -19,7 +19,7 @@
 }
 
 .slide-x-transition {
-  .transition-default();
+  @include transition-default;
 
   &-enter-from,
   &-leave-to {
@@ -29,7 +29,7 @@
 }
 
 .slide-x-reverse-transition {
-  .transition-default();
+  @include transition-default;
 
   &-enter-from,
   &-leave-to {

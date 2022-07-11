@@ -28,7 +28,7 @@ export function createSimpleTransition(name: string, origin = "top center 0", mo
       }) as any
 
       return () => {
-        const Tag = !props.group ? Transition : TransitionGroup
+        const Tag = (!props.group ? Transition : TransitionGroup) as any
         return (
           <Tag name={name} mode={props.mode} {...attrs} onBeforeEnter={onBeforeEnter}>
             {() => getSlot(slots)}

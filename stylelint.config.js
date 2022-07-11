@@ -12,18 +12,10 @@ module.exports = {
         ignorePseudoClasses: ["global"],
       },
     ],
-    "selector-pseudo-element-no-unknown": [
-      true,
-      {
-        ignorePseudoElements: ["v-deep"],
-      },
-    ],
     "at-rule-no-unknown": [
       true,
       {
         ignoreAtRules: [
-          "tailwind",
-          "apply",
           "variants",
           "responsive",
           "screen",

@@ -1,4 +1,4 @@
-.transition-default() {
+@mixin transition-default {
   &-enter-active,
   &-leave-active {
     transition: 0.3s cubic-bezier(0.25, 0.8, 0.5, 1) !important;
@@ -10,9 +10,9 @@
 }
 
 .expand-transition {
-  .transition-default();
+  @include transition-default;
 }
 
 .expand-x-transition {
-  .transition-default();
+  @include transition-default;
 }

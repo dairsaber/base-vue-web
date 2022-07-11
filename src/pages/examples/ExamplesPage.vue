@@ -35,12 +35,3 @@
     </div>
   </div>
 </template>
-
-<style lang="less" scoped>
-  .selected {
-    @apply outline-none ring-2 ring-purple-600 ring-offset-2;
-  }
-  .button {
-    @apply ml-4 mb-4 mr-2 px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent;
-  }
-</style>

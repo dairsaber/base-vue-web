@@ -1,8 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@import "./transition/index.less";
+@use "./transition/index.scss";
 
 html,
 body,
