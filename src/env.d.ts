@@ -1,7 +1,7 @@
 /// <reference types="vite/client" />
 
 interface ImportMetaEnv {
-  readonly VITE_CESIUM_MODEL_BASE_URL: string
+  // readonly VITE_CESIUM_MODEL_BASE_URL: string
   // 更多环境变量...
 }
 
