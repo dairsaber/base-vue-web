@@ -12,16 +12,14 @@
 </script>
 
 <template>
-  <div class="relative w-full h-full">
+  <v-sheet class="tw-relative tw-w-full tw-h-full">
     <component :is="currentSelectKey" />
-    <div class="box-border absolute top-0 right-0 flex h-screen p-4">
-      <div class="flex flex-col p-4 overflow-y-auto bg-white rounded-md bg-opacity-80">
+    <div class="tw-absolute tw-right-0 tw-top-0 tw-w-48 tw-p-4">
+      <div class="tw-flex tw-flex-col">
         <template v-for="(group, index) in componentGroups" :key="group.group">
-          <section class="h-10 pl-2 my-3 text-xl leading-10 bg-gray-400 rounded-sm">
-            {{ index + 1 }}.{{ group.group }}
-          </section>
+          <section>{{ index + 1 }}.{{ group.group }}</section>
 
-          <button
+          <v-btn
             v-for="item in group.components"
             :key="item.label"
             :class="{ selected: item.component === currentSelectKey }"
@@ -29,9 +27,9 @@
             @click="handleSelected(item.component)"
           >
             {{ item.label }}
-          </button>
+          </v-btn>
         </template>
       </div>
     </div>
-  </div>
+  </v-sheet>
 </template>

@@ -1,11 +1,43 @@
 @use "./transition/index.scss";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body,
 #app {
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
   margin: 0;
   padding: 0;
+  // overflow-y: scroll !important;
+}
+
+/* 滚动条整体 */
+::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+}
+/* 两个滚动条交接处 -- x轴和y轴 */
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+/* 滚动条滑块 */
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #0967cb7d;
+}
+
+/* 滚动条轨道 */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background: #ededed;
+}
+
+/* 滚动条两端按钮 */
+::-webkit-scrollbar-button {
 }

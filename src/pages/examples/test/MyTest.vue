@@ -5,5 +5,11 @@
 </script>
 
 <template>
-  <div class="flex items-center justify-center w-full h-full text-5xl">I am test</div>
+  <v-container>
+    <v-btn color="success" rounded="xl"> 我是一只住 </v-btn>
+    <v-sheet :dark="true" :elevation="5" color="orange lighten-2" class="text-center">
+      你是一个住
+      <p v-for="x in 10" :key="x">{{ x }}</p>
+    </v-sheet>
+  </v-container>
 </template>
