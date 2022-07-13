@@ -22,8 +22,7 @@
           <v-btn
             v-for="item in group.components"
             :key="item.label"
-            :class="{ selected: item.component === currentSelectKey }"
-            class="button"
+            :active="item.component === currentSelectKey"
             @click="handleSelected(item.component)"
           >
             {{ item.label }}
