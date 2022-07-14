@@ -14,8 +14,6 @@
 
 <template>
   <v-app>
-    <v-system-bar>something</v-system-bar>
-
     <v-app-bar density="compact" app>
       <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer" />
       <v-toolbar-title>My files</v-toolbar-title>
