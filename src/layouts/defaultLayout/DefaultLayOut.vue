@@ -16,7 +16,7 @@
   <v-app>
     <v-system-bar>something</v-system-bar>
 
-    <v-app-bar dense app>
+    <v-app-bar density="compact" app>
       <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer" />
       <v-toolbar-title>My files</v-toolbar-title>
       <v-spacer />
@@ -30,7 +30,20 @@
     <v-main class="tw-h-screen">
       <MainContent />
     </v-main>
-    <v-footer color="" app> 这是footer </v-footer>
+    <v-footer class="!tw-p-0" app>
+      <!-- 状态栏 -->
+      <v-layout style="height: 24px">
+        <v-system-bar color="primary">
+          <v-icon icon="mdi-message" class="mr-2" />
+          <span>10 unread messages</span>
+          <v-spacer />
+          <v-icon icon="mdi-wifi-strength-4" class="ml-2" />
+          <v-icon icon="mdi-signal-cellular-outline" class="ml-2" />
+          <v-icon icon="mdi-battery" class="ml-2" />
+          <span class="ml-2">08:30</span>
+        </v-system-bar>
+      </v-layout>
+    </v-footer>
   </v-app>
 </template>
 
