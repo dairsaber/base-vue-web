@@ -19,6 +19,7 @@ const config: GroupItemConfig[] = [
       JsxTest: () => import("./test/JsxTest.jsx"),
       TsxTest: () => import("./test/TsxTest"), // tsx结尾的扩展名不用加上会校验报错
       VueTsx: () => import("./test/VueTsx.vue"),
+      IconTest: () => import("./test/IconTest.vue"),
     },
   },
 ]

@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@iconify/vue': ^3.2.1
   '@types/node': ^18.0.0
   '@typescript-eslint/eslint-plugin': ^5.30.0
   '@typescript-eslint/parser': ^5.30.0
@@ -34,6 +35,7 @@ dependencies:
   vue-router: 4.0.16_vue@3.2.37
 
 devDependencies:
+  '@iconify/vue': 3.2.1_vue@3.2.37
   '@types/node': 18.0.0
   '@typescript-eslint/eslint-plugin': 5.30.4_oeyyzvni2izsdti5l3jhh6vc7a
   '@typescript-eslint/parser': 5.30.4_b5e7v2qnwxfo6hmiq56u52mz3e
@@ -395,6 +397,14 @@ packages:
 
   /@humanwhocodes/object-schema/1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    dev: true
+
+  /@iconify/vue/3.2.1_vue@3.2.37:
+    resolution: {integrity: sha512-c4R6ZgFo1JrJ8aPMMgOPgfU7lBswihMGR+yWe/P4ZukC3kTkeT4+lkt9Pc/itVFMkwva/S/7u9YofmYv57fnNQ==}
+    peerDependencies:
+      vue: 3.x
+    dependencies:
+      vue: 3.2.37
     dev: true
 
   /@jridgewell/gen-mapping/0.1.1:
